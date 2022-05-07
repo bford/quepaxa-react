@@ -1,0 +1,19 @@
+h1, p {
+  font-family: Lato;
+}
+
+.consenserBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.consenserApproveBox {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.consenserButton {
+  flex-grow: 1;
+}
