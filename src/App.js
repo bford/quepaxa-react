@@ -208,12 +208,12 @@ class paxPushNode {
   }
   
   // Receive a message that needs to be validated first, then handled.
-  receive(from, msg) {
-    this.validate(from, msg)
-    .then(() => this.handle(from, msg))
-    .catch(err) {
-      console.log("dropping invalid message");
-    }
+  async receive(from, msg) {
+    //this.validate(from, msg)
+    //.then(() => this.handle(from, msg))
+    //.catch(err) {
+    //  console.log("dropping invalid message");
+    //}
   }
 
   // Handle a received message that has already been fully validated.
@@ -268,7 +268,7 @@ class paxPushNode {
         switch (msg.type) {
           case 'follow':
             const last = this.lasts[from];
-            if ((last != null) &&  {
+            if ((last != null) && 0 /* XXX */) {
       
             }
             this.lasts[from = msg];
